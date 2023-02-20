@@ -997,42 +997,93 @@ The size is sightly bugger than normal chargers as bigger PCB size which has alm
 
 === System Diagram
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,400,800,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,800,400,align="center"]
 
 [.text-center]
 _Figure 1._ 
 
+{empty} +
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215227.png[img2,800,400,align="center"]
 
 [.text-center]
-_Figure 1._ 
+_Figure 2._ 
 
+{empty} +
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215318.png[img3,800,400,align="center"]
 
 [.text-center]
-_Figure 1._ 
+_Figure 3._ 
 
+{empty} + 
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215349.png[img4,800,400,align="center"]
 
 [.text-center]
-_Figure 1._ 
+_Figure 4._ 
 
+{empty} +
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215440.png[img5,800,400,align="center"]
 
+[.text-center]
+_Figure 5._ 
+
+{empty} +
+
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215501.png[img6,800,400,align="center"]
+
+[.text-center]
+_Figure 6._ 
+
+{empty} +
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215530.png[img7,800,400,align="center"]
 
+[.text-center]
+_Figure 7._ 
+
+{empty} +
+
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215604.png[img8,800,400,align="center"]
+
+[.text-center]
+_Figure 8._ 
+
+{empty} +
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215643.png[img9,800,400,align="center"]
 
+[.text-center]
+_Figure 9._ 
+
+{empty} +
+
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,800,400,align="center"]
 
+<<<<<<< HEAD
+=======
+[.text-center]
+_Figure 10._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
+
+[.text-center]
+_Figure 11._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,800,400,align="center"]
+
+[.text-center]
+_Figure 12._ 
+
+{empty} +
+
+>>>>>>> 82431ce6cd452eaccb1cadb625e3cd7034b8abf4
 == Maintenance
 
 == Future Scope
