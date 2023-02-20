@@ -944,6 +944,28 @@ The size is sightly bugger than normal chargers as bigger PCB size which has alm
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,400,400,align="center"]
 
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215227.png[img2,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215318.png[img3,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215349.png[img4,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215440.png[img5,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215501.png[img6,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215530.png[img7,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215604.png[img8,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215643.png[img9,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,400,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,400,400,align="center"]
+
 == Maintenance
 
 == Future Scope
