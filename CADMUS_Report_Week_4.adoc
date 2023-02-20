@@ -942,6 +942,8 @@ The size is sightly bugger than normal chargers as bigger PCB size which has alm
 === Simulation Results
 // ADD IMAGE HERE
 
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,400,400,align="center"]
+
 == Maintenance
 
 == Future Scope
