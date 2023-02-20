@@ -1068,7 +1068,7 @@ _Figure 10._
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001752.png[img13,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_010535.png[img13,400,400,align="center"]
 
 [.text-center]
 _Figure 11._ 
