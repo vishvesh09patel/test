@@ -883,6 +883,7 @@ Other Specifications
 |===
 
 == Abstract
+This report includes the requirements and specifications for the mobile charger designed by tribe CADMUS. We first compiled a list of requirements any commoner would expect from a mobile charger. Upon researching about the same, we trimmed our requirements to specifications we could actually incorporate. Major focus was to make our device accessible and future ready, keeping in mind the legalities involved. We ensured that our mobile charger was compatible with each standard and was safe to use at these specifications. We also kept in mind the prices of various raw materials used in the charger for our aim of catering to the masses.
 
 == Motivation
 Exploring the device that we use everyday was actually the fun part. Observing the intricacies and realising the simplicity of the charger was motivating. It was thrilling to implement the electrical circuits knowledge we gained in high school and first year. The mechanical team realised size limitation most companies are facing and balanced the tradeoff in compactness and efficiency. We have also added the scope of improvement that was result of extensive brainstorming among our enthusiastic members.
@@ -995,7 +996,7 @@ The charger design involves two critical aspects, including CAD model design and
 
 The size is sightly bugger than normal chargers as bigger PCB size which has almost no relation with the CAD model but is still a potential drawback for the model.
 
-=== System Diagram
+== System Diagram
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,800,400,align="center"]
 
@@ -1062,67 +1063,70 @@ _Figure 9._
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,800,400,align="center"]
 
-<<<<<<< HEAD
-=======
 [.text-center]
 _Figure 10._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001752.png[img13,400,400,align="center"]
 
 [.text-center]
 _Figure 11._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,800,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001817.png[img14,400,400,align="center"]
 
 [.text-center]
 _Figure 12._ 
 
 {empty} +
 
-<<<<<<< HEAD
->>>>>>> 82431ce6cd452eaccb1cadb625e3cd7034b8abf4
-=======
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001752.png[img13,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001853.png[img15,400,400,align="center"]
 
 [.text-center]
 _Figure 13._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001817.png[img14,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_002147.png[img16,400,400,align="center"]
 
 [.text-center]
 _Figure 14._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001853.png[img15,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_003752.png[img17,400,400,align="center"]
 
 [.text-center]
 _Figure 15._ 
 
-{empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_002147.png[img16,400,400,align="center"]
-
-[.text-center]
-_Figure 16._ 
-
-{empty} +
-
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_003752.png[img17,400,400,align="center"]
-
-[.text-center]
-_Figure 17._ 
-
-{empty} +
-
->>>>>>> e1c22f2641c625a2f1d45e631fa3d5fe7ccd16f0
 == Maintenance
+The charger would come with clear instructions regarding its usage, including information on how to properly connect it to a device and how to troubleshoot common issues that users might face while using the product.
+
+.Some common issues related to chargers include:
+
+* _Loose connections_: If the charger cable is not securely connected to the device or power source, the device may not charge properly or may disconnect frequently.
+
+* _Damaged cables_: With extended usage, charging cables can become frayed, bent, or damaged, which can prevent the charger from functioning properly.
+
+* _Incompatible charging ports_: If the charger is not compatible with the device's charging port, it may not charge the device at all or may charge it very slowly. Some factors that might affect this include power output and the type of cable used.
+
+* _Check the voltage and current rating_: Make sure the voltage and current rating of your charger matches the requirements of your device. Using a charger with a higher voltage or current rating than your device can handle can damage it.
+
+* _Avoid overcharging_: Overcharging your device can damage the battery and reduce its lifespan. To avoid this, unplug your device once it reaches a full charge, or use a charger that automatically stops charging once the battery is full.
+
+* _Insufficient power supply_: If the charger is not providing enough power, the device may not charge properly or may take a long time to charge. This may also negatively impact the battery life of the device as well as the battery of the mobile phone.
+
+* _Avoid twisting or bending the cord_: Twisting or bending the cord repeatedly can cause it to wear out or break. Instead, unplug the charger by pulling on the plug itself, not the cord.
+
+If a user is experiencing issues with their charger, they should try checking for loose connections or damage to the cable. The user may also want to try using a different charging cable or power source to verify if the issue is with the charger itself.
+
+Replacements for the charging cable are neither viable nor practical since a fault with the cable can occur to various reasons not in the control of the manufacturer. Moreover, there is no ensured method to determine whether the fault was a manufacturing issue or not. In case the customer asks for a replacement for the adapter, while they are under warranty period, we proceed as follows:
+
+- We can check for underlying causes for the faults experienced by the user, and attempt to troubleshoot the issues if possible. In a case where a replacement is inevitable, we can replace the charger and attempt to restore the damaged piece.
+- If the problem is a mechanical one, such as the cable, then only that component will need to be replaced. On the other hand, if the problem is with the circuit, then we can salvage the parts that are still functional to ensure the system's continued operation.
 
 == Future Scope
 .There are several areas for potential future development and improvement for the mobile charger. In this section, we outline six potential areas of future scope for the charger:
@@ -1178,14 +1182,3 @@ _Figure 17._
 . P. et al. (2022) How to read Smartphone Charger Specifications, Inquisitive Universe. Available at: https://inquisitiveuniverse.com/2021/04/21/how-to-read-smartphone-charger-specifications/ (Accessed: January 31, 2023). 
 . USB Type-C® Cable and Connector Specification, USB-IF. https://www.usb.org/usb-type-cr-cable-and-connector-specification/ (Accessed: January 31, 2023). 
 . Brant, T. (2022, October 26). What Is USB-C? An Explainer. PCMAG. https://www.pcmag.com/how-to/what-is-usb-c-an-explainer/ (Accessed: January 31, 2023). 
- 
-
-
-
- 
-
-
-
-
-
-
