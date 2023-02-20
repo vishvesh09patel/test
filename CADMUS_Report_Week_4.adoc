@@ -509,35 +509,35 @@ The team division with their contact email and participation is given below:
 
 |===
 
-== Mind Map
-[plantuml,svg]
-----
-@startmindmap
+// == Mind Map
+// [plantuml,svg]
+// ----
+// @startmindmap
 
-+ *Specifications*
-++ Charger adapter
-++ Electric plug-in
-++ Charger cable
+// + *Specifications*
+// ++ Charger adapter
+// ++ Electric plug-in
+// ++ Charger cable
 
-@endmindmap  
-----
-[plantuml,svg]
-----
-@startmindmap
+// @endmindmap  
+// ----
+// [plantuml,svg]
+// ----
+// @startmindmap
 
-+ *Requirements*
-++ Input/Output
-++ Plug
-++ Safety features
+// + *Requirements*
+// ++ Input/Output
+// ++ Plug
+// ++ Safety features
 
-'tag::left[]
--- Cable
--- Connector
--- Extrior body
-'end::left[]
+// 'tag::left[]
+// -- Cable
+// -- Connector
+// -- Extrior body
+// 'end::left[]
 
-@endmindmap  
-----
+// @endmindmap  
+// ----
 
 == Gantt Chart
 
@@ -555,8 +555,11 @@ The team division with their contact email and participation is given below:
 [Specifications compilation] lasts 6 days 
 [Review-II] lasts 5 days 
 -- Phase Three -- 
-[Prototype design] lasts 15 days 
-[Minor 1] lasts 4 days
+[Prototype design-I] lasts 8 days 
+[Prototype design-II] lasts 13 days 
+[Final product assembly] lasts 10 days
+[Final report compilation] lasts 10 days 
+[Review-III] lasts 5 days 
 
 Project starts 2023-01-07 
 [Distribution of sub-teams] starts 2023-01-07
@@ -568,83 +571,113 @@ Project starts 2023-01-07
 [Research-II] starts 2023-01-21 
 [Specifications compilation] starts 2023-01-23 
 [Review-II] starts 2023-01-26 
-[Prototype design] starts 2023-01-26 
-[Minor 1] starts 2023-02-06 
+[Prototype design-I] starts 2023-01-26 
+[Prototype design-II] starts 2023-02-03
+[Final product assembly] starts 2023-02-11
+[Final report compilation] starts 2023-02-11
+[Review-III] starts 2023-02-17 
 today is 44 days after start and is colored in #AAF 
+2023-02-06 to 2023-02-10 are named [MINOR 1]
+2023-02-06 to 2023-02-10 are colored in salmon 
 @endgantt
 ----
-
 
 // == Critical path
 
 == List of Abbreviations
-
-[cols="1,1"]
+[cols="1,2,4"]
 
 |===
-|Abbreviation |Full Name
+|S.No. |Abbreviation |Stands for
 
+
+|1
 |Cdd
-|
+|Bypass Capacitor
 
+|2
 |Cin
-|
+|Input Capacitor 1
 
+|3
 |Cin2
-|
+|Input Capacitor 2
 
+|4
 |Cout
-|
+|Output Capacitor
 
+|5
 |D2
-|
+|Schottky Barrier Diode 1
 
+|6
 |D3
-|
+|Schottky Barrier Diode 3
 
+|7
 |Dac
-|
+|Diode Bridge Rectifier
 
+|8
 |Dsnub
-|
+|Snubber Diode
 
+|9
 |Dz1
-|
+|Transient Voltage Suppressor
 
+|10
 |L1
-|
+|Input Inductance
 
+|11
 |Rbld
-|
+|Pre-Load Resistance
 
+|12
 |Rcs
-|
+|Current Sense Resistor
 
+|13
+|Rcbc
+|Cable Compensation Resistance
+
+|14
 |Rdd
-|
+|Bypass Resistor
 
+|15
 |Rfbb
-|
+|Voltage Divider Lower Resistance
 
-|Rtbt
-|
+|16
+|Rfbt
+|Voltage Divider Upper Resistance
 
+|17
 |Rl
-|
+|Inner Resistance
 
+|18
 |Rlc
-|
+|Line Compensation Resistor
 
+|19
 |T1
-|
+|Transformer
 
+|20
 |U1
-|
+|Flyback Controller
 
+|21
 |U2
-|
+|Wakeup Monitor
 
+|22
 |M1
+|Mosfet
 |===
 
 == Requirements
@@ -659,7 +692,6 @@ Here are the requirements we have compiled for the following:
 2. The plug needs to be sturdy enough to endure being inserted and removed from the socket several times.
 3. There should be no sharp edges or other metal protrusions on the plug that might cause an electrical shock.
 4. The plug needs to be safe by the standards of the market it’s destined for, such as BIS in India.
-5. The connector should conform to current specifications for charging mobile devices.
 
 === Safety Features
 1. Over-voltage, over-current, and short-circuit protection.
@@ -670,18 +702,19 @@ Here are the requirements we have compiled for the following:
 
 === Cable
 1. A cable length of 90 cm would be suitable, as it allows for more flexibility in positioning the charger and the phone while charging.
-2. The length of the cable can have an effect on safety, as well as the thermodynamics of wire heating. Longer cables generally have more resistance than shorter cables, which can lead to an increase in the amount of heat generated during charging .This can be a safety concern, as excessive heat can damage the charger, the cable, and the device being charged.
+2. The length of the cable can affect the safety and the thermodynamics of wire heating. Longer cables generally have more resistance than shorter cables, which can lead to an increase in the amount of heat generated during charging. This can be a safety concern, as excessive heat can damage the charger, the cable, and the device being charged.
 3. The potential of a short circuit or other electrical hazards increases with cable length, which is already more vulnerable to physical damage and wear and tear.
-4. Use only cables and chargers that have been certified as safe by the appropriate authorities, and only for their intended use, to reduce the potential for harm. That means not just making sure the cable isn't frayed or broken, but also utilising the right cable for the device.
+4. Use only cables and chargers that have been certified as safe by the appropriate authorities and only for their intended use to reduce the potential for harm. That means not just ensuring the cable isn’t frayed or broken, but also utilising the suitable cable for the device.
 5. Thermodynamic considerations for wire heating should be made while designing both the cable and the charger to ensure maximum charging efficiency and to reduce the amount of heat created by the cable and the charger.
 
 === Connector
-1. Type-C USB connector for charging newer models of mobile phones after Dec 31, 2024 as it will become the standard in India.
+1. Type-C USB connector for charging newer models of mobile phones after Dec 31, 2024, as it will become the standard in India.
 2. Connector should have fast charging capability.
+3. The connector should conform to current specifications for charging mobile devices.
 
 === Exterior Body
-1. We should keep the size of the charger to be 10 cm in length, and 4 cm in width for easy portability as well as light in weight.
-2. The charger should also be able to withstand sudden impacts without damage to the inner circuit, such as falling on the ground.
+1. We should keep the size of the charger to be 10 cm in length and 4 cm in width for easy portability as well as light in weight.
+2. The charger should also be able to withstand sudden impacts, such as falling on the ground, without damage to the inner circuit.
 
 == Specifications
 === Charger Cable
@@ -933,14 +966,36 @@ The wake-up function operates in conjunction with the flyback controller (UCC287
 ----
 
 == Design Cycle
-=== Insights 
+=== Circuit Design 
+The most fundamental part of designing a charger is its underlying circuit design. The Electrical Team of CADMUS attempted to design a circuit and tested it under various conditions to assess its feasibility. The circuit diagram for our attempt is shown below:
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
+[.text-center]
+_Figure 1. Circuit diagram for our charger_ 
+
+The following is the output-voltage vs time curve for the circuit:
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,800,400,align="center"]
+[.text-center]
+_Figure 2. Simulation results on KiCAD_ 
+
+As clearly visible, the circuit worked well, and it converged to the desirable output voltage of 5V quite quickly. However, it had a few drawbacks, so, we had to discard it.
+
+.Drawbacks:
+-	The frequencies at which this circuit would be operating would be around 50-60 Hz, which is relatively low. In our design, we require the use of a Step Down Transformer which would work at the said frequency. Such available transformers are usually quite large and bulky in size, and have low efficiency, that is, they generate a significant amount of heat. This would lead to thermal issues with the charger. 
+-	The circuit is very unstable with respect to sudden variations/surges in current/voltage. It needs to be protected from the same using fuse resistors. This can lead to unexpected heating of the circuit which can damage the components and dissipate unnecessary heat in order to maintain constant output voltage.
+
+Due to these reasons we started looking at SMPS circuits, which are not only much more energy efficient compared to linear regulators, but also allow for usage of smaller components. They are also capable of operating at a wide range of inputs.
+
+After exploring on the web, we found a lot of SMPS circuits whose components would only allow a maximum current of 1 A, which is when we came across WEBENCH Power Designer by Texas Instruments. This gave us a circuit based on our requirements. We later verified if whether the components provided by the tool were fit for use or not, which was followed by PCB Design and Simulation.
+
+=== Body Design
+
 The charger design involves two critical aspects, including CAD model design and 3D printing. To improve our models, we took apart a pre-existing mobile charger to gain insights. Our improvements included adding a backside lid and attaching it with an adhesive, leaving space for metal prongs on the front side, and filleting sharp edges to avoid potential hazards. Additionally, we incorporated a Type C port on the back lid to allow for future connectivity and engraved our tribe's logo (CADMUS) on the top side to prevent copying. The use of a backside lid for analysis and the incorporation of a Type C port align with the increasing use of this technology in the future.
 
 The size is sightly bugger than normal chargers as bigger PCB size which has almost no relation with the CAD model but is still a potential drawback for the model.
 
 === System Diagram
-=== Simulation Results
-// ADD IMAGE HERE
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,400,800,align="center"]
 
@@ -978,14 +1033,10 @@ image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,800,400,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
-
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,800,400,align="center"]
-
 == Maintenance
 
 == Future Scope
-.There are several areas for potential future development and improvement for the mobile charger. In this section, we outline four potential areas of future scope for the charger:
+.There are several areas for potential future development and improvement for the mobile charger. In this section, we outline six potential areas of future scope for the charger:
 1. *Holder for Mobile Devices*: One potential future development for the charger is to modify the adapter to include a holder for mobile devices. This would allow users to charge their phone while also using it, without the need for an additional holder. However, this would require an increase in the size of the casing and the charger material would need to be stronger to support the additional weight. Additionally, the pins would need to be tightly attached to the adapter to ensure they can support the weight of the phone.
 2. *Fast Charging*: Another potential area for future development is to incorporate fast charging into the design. This would involve changes to the circuit design and CAD model to ensure that the charger can provide fast charging without compromising the safety of the mobile device. Fast charging can be achieved by optimizing the power output and charging algorithm to reduce the charging time while maintaining the safety of the device.
 3.	*Retractable Pins*: To increase the portability and ease of use of the charger, one potential future development is to include retractable pins in the design. This would make the charger more compact and easier to carry, as the pins could be retracted when not in use.
@@ -997,33 +1048,33 @@ image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circui
 [.text-center]
 :linkattrs:
 
-[cols="1,1,1,1,1,1"]
+[cols="2,2,5,3,3,3,9"]
 |===
-|Name |Part Number |Amount in Bulk | Optimal price per piece (bulk) | Price per piece (single unit) | Link
+|S.No. |Name |Part Number |Amount in Bulk | Bulk price per piece (Rs) | Price per single piece (Rs) | Link
 
-|C~dd~	|80-ESC685M035AC3AA	|10K	|0.059	|0.29	|https://octopart.com/search?q=80-ESC685M035AC3AA&currency=USD&specs=0 
+|1|C~dd~	|80-ESC685M035AC3AA	|10,000	|0.059	|0.29	|https://octopart.com/search?q=80-ESC685M035AC3AA&currency=USD&specs=0 
 
-|C~in~	|UVK2A100MDD	|10K	|0.068	|0.32	|https://octopart.com/search?q=UVK2A100MDD&currency=USD&specs=0
-|C~in2~	|UVK2A100MDD	|10K	|0.068	|0.32	|https://octopart.com/search?q=UVK2A100MDD&currency=USD&specs=0
-|C~out~	|860010375013	|10K	|0.213	|0.37	|https://octopart.com/search?q=860010375013&currency=USD&specs=0
-|D~2~	|RB095T-40NZ	|10K	|0.898	|1.95	|https://octopart.com/search?q=RB095T-40NZ&currency=USD&specs=0
-|D~3~	|MBR2200	|10K	|0.153	|0.186	|https://octopart.com/search?q=MBR2200&currency=USD&specs=0
-|D~ac~	|HD-06T	|10K	|0.105	|0.487	|https://octopart.com/search?q=HD-06T&currency=USD&specs=0
-|D~snub~	|TXN825RG	|10K	|0.947	|2.22	|https://octopart.com/search?q=TXN825RG&currency=USD&specs=0
-|D~z1~	 |SMBJ150A-13-F	|10k	|0.054	|0.08	|https://octopart.com/search?q=SMBJ150A-13-F&currency=USD&specs=0
-|L~1~	|MSS1048-474KLB	|10K	|0.972	|1.753	|https://octopart.com/search?q=MSS1048-474KLB&currency=USD&specs=0
-|R~bld~	|RN50E7150BRE6	|10K`	|0.936	|NA	|https://octopart.com/search?q=RN50E7150BRE6&currency=USD&specs=0
-|R~cs~	|MFR50SFBF52-0R82-ND	|10K	|0.012	|NA	|https://mg.components-store.com/product/Yageo/MFR50SFBF52-0R82.html
-|R~dd~	|CFR0W2	|10K	|0.06	|NA	|https://octopart.com/search?q=CFR0W2&currency=USD&specs=0
-|R~fbb~	|CMF5029K400FHEB	|10k	|0.268	|0.87	|https://octopart.com/search?autosugg_idx=1&q=cmf5029k400fheb&currency=USD&specs=0
-|R~fbt~	|RN55C1013BR36	|25K	|0.075	|NA	|https://mg.components-store.com/product/Dale-Vishay/RN55C1013BR36.html	
-|R~l~	|RNF14FTD10R0	|10k	|0.022	|0.118	|https://octopart.com/search?q=RNF14FTD10R0&currency=USD&specs=0
-|R~lc~	|RN55E1241FRE6	|10k	|0.31	|NA	|https://www.digikey.in/en/products/detail/vishay-dale/RN55E1241FRE6/3329406
-|T~1~	|Core=B66307G0000X187 	|10k	|0.239	|0.522	|https://octopart.com/b66307g0000x187-epcos-20737672
-|T~1~	|CoilFormer=B66308W1108T001	|10k	|0.63	|0.849	|https://octopart.com/b66308w1108t001-epcos-22229300
-|U~1~	|UCC28730DR	|10k	|0.367	|0.539	|https://octopart.com/ucc28730dr-texas+instruments-55597326
-|U~2~	|UCC24650DBVR	|10k	|0.16	|0.459	|https://octopart.com/ucc24650dbvr-texas+instruments-48523579
-|M~1~	|IPP65R190C7	|10K	|1.88	|3.82	|https://octopart.com/search?q=IPP65R190C7&currency=USD&specs=0
+|2|C~in~	|UVK2A100MDD	|10,000	|0.068	|0.32	|https://octopart.com/search?q=UVK2A100MDD&currency=USD&specs=0
+|3|C~in2~	|UVK2A100MDD	|10,000	|0.068	|0.32	|https://octopart.com/search?q=UVK2A100MDD&currency=USD&specs=0
+|4|C~out~	|860010375013	|10,000	|0.213	|0.37	|https://octopart.com/search?q=860010375013&currency=USD&specs=0
+|5|D~2~	|RB095T-40NZ	|10,000	|0.898	|1.95	|https://octopart.com/search?q=RB095T-40NZ&currency=USD&specs=0
+|6|D~3~	|MBR2200	|10,000	|0.153	|0.186	|https://octopart.com/search?q=MBR2200&currency=USD&specs=0
+|7|D~ac~	|HD-06T	|10,000	|0.105	|0.487	|https://octopart.com/search?q=HD-06T&currency=USD&specs=0
+|8|D~snub~	|TXN825RG	|10,000	|0.947	|2.22	|https://octopart.com/search?q=TXN825RG&currency=USD&specs=0
+|9|D~z1~	 |SMBJ150A-13-F	|10,000	|0.054	|0.08	|https://octopart.com/search?q=SMBJ150A-13-F&currency=USD&specs=0
+|10|L~1~	|MSS1048-474KLB	|10,000	|0.972	|1.753	|https://octopart.com/search?q=MSS1048-474KLB&currency=USD&specs=0
+|11|R~bld~	|RN50E7150BRE6	|10,000`	|0.936	|NA	|https://octopart.com/search?q=RN50E7150BRE6&currency=USD&specs=0
+|12|R~cs~	|MFR50SFBF52-0R82-ND	|10,000	|0.012	|NA	|https://mg.components-store.com/product/Yageo/MFR50SFBF52-0R82.html
+|13|R~dd~	|CFR0W2	|10,000	|0.06	|NA	|https://octopart.com/search?q=CFR0W2&currency=USD&specs=0
+|14|R~fbb~	|CMF5029K400FHEB	|10,000	|0.268	|0.87	|https://octopart.com/search?autosugg_idx=1&q=cmf5029k400fheb&currency=USD&specs=0
+|15|R~fbt~	|RN55C1013BR36	|25,000	|0.075	|NA	|https://mg.components-store.com/product/Dale-Vishay/RN55C1013BR36.html	
+|16|R~l~	|RNF14FTD10R0	|10,000	|0.022	|0.118	|https://octopart.com/search?q=RNF14FTD10R0&currency=USD&specs=0
+|17|R~lc~	|RN55E1241FRE6	|10,000	|0.31	|NA	|https://www.digikey.in/en/products/detail/vishay-dale/RN55E1241FRE6/3329406
+|18|T~1~	|B66307G0000X187 	|10,000	|0.239	|0.522	|https://octopart.com/b66307g0000x187-epcos-20737672
+|19|T~1~	|B66308W1108T001	|10,000	|0.63	|0.849	|https://octopart.com/b66308w1108t001-epcos-22229300
+|20|U~1~	|UCC28730DR	|10,000	|0.367	|0.539	|https://octopart.com/ucc28730dr-texas+instruments-55597326
+|21|U~2~	|UCC24650DBVR	|10,000	|0.16	|0.459	|https://octopart.com/ucc24650dbvr-texas+instruments-48523579
+|22|M~1~	|IPP65R190C7	|10,000	|1.88	|3.82	|https://octopart.com/search?q=IPP65R190C7&currency=USD&specs=0
 |===
 *NOTE: All prices are exclusive of import TDS @1%*
 
