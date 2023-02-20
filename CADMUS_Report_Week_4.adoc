@@ -968,11 +968,12 @@ The wake-up function operates in conjunction with the flyback controller (UCC287
 
 == Design Cycle
 === Circuit Design 
+==== First Iteration
 The most fundamental part of designing a charger is its underlying circuit design. The Electrical Team of CADMUS attempted to design a circuit and tested it under various conditions to assess its feasibility. The circuit diagram for our attempt is shown below:
 
 image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
 [.text-center]
-_Figure 1. Circuit diagram for our charger_ 
+_Figure 1. Circuit diagram_ 
 
 The following is the output-voltage vs time curve for the circuit:
 
@@ -988,7 +989,63 @@ As clearly visible, the circuit worked well, and it converged to the desirable o
 
 Due to these reasons we started looking at SMPS circuits, which are not only much more energy efficient compared to linear regulators, but also allow for usage of smaller components. They are also capable of operating at a wide range of inputs.
 
+==== Second Iteration
 After exploring on the web, we found a lot of SMPS circuits whose components would only allow a maximum current of 1 A, which is when we came across WEBENCH Power Designer by Texas Instruments. This gave us a circuit based on our requirements. We later verified if whether the components provided by the tool were fit for use or not, which was followed by PCB Design and Simulation.
+
+kicad-circuit-1.png
+Simulation.jpg
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/kicad-circuit-1.png
+[img12,800,400,align="center"]
+[.text-center]
+_Figure 3. Circuit Diagram for our Charger_ 
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/Simulation.png[img12,800,400,align="center"]
+[.text-center]
+_Figure 4. Simulation results_ 
+
+We tested the circuit on PSPICE 16.6. Above circuit diagram shows 8 waveforms which represent output voltages at 8 inputs:
+
+[cols=",,",options="header"]
+|===
+
+|Color
+|ValueAmplitude Voltage (Volt)
+|Frequency (Hertz)
+
+|Pink
+|312
+|60
+
+|Orange 
+|312
+|50
+
+|Light Blue 
+|250
+|60
+
+|Magenta
+|250
+|50
+
+|Yellow
+|200
+|60
+
+|Blue
+|200
+|50
+
+|Green
+|140
+|60
+
+|Red
+|140
+|50
+|===
+
+As we can see, for various ranges of inputs, we obtain a constant 5V DC output, with the time taken to reach steady state being less than 5ms in each case. We observe that this time increases with decrease in amplitude voltage and decrease in input frequency. However the differences of these times is quite minute.
 
 === Body Design
 

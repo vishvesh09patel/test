@@ -1,11 +1,10 @@
-= ELP305| Design and Systems Laboratory
+= ELP305| Design and Systems Laborator
 :toc: left
   font-color: #333333
 :authors: Conclusion Report
 :sectids:
 :sectnums: all
 :stem: asciimath
-:pagenums:
 
 = Week 3 Report
 [caption="Tribe C: "]
