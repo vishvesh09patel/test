@@ -704,7 +704,7 @@ Here are the requirements we have compiled for the following:
 1. A cable length of 90 cm would be suitable, as it allows for more flexibility in positioning the charger and the phone while charging.
 2. The length of the cable can affect the safety and the thermodynamics of wire heating. Longer cables generally have more resistance than shorter cables, which can lead to an increase in the amount of heat generated during charging. This can be a safety concern, as excessive heat can damage the charger, the cable, and the device being charged.
 3. The potential of a short circuit or other electrical hazards increases with cable length, which is already more vulnerable to physical damage and wear and tear.
-4. Use only cables and chargers that have been certified as safe by the appropriate authorities and only for their intended use to reduce the potential for harm. That means not just ensuring the cable isn’t frayed or broken, but also utilising the suitable cable for the device.
+4. Use only cables and chargers that have been certified as safe by the appropriate authorities and only for their intended use to reduce the potential for harm. That means not just ensuring the cable isn't frayed or broken, but also utilising the suitable cable for the device.
 5. Thermodynamic considerations for wire heating should be made while designing both the cable and the charger to ensure maximum charging efficiency and to reduce the amount of heat created by the cable and the charger.
 
 === Connector
@@ -725,21 +725,21 @@ A USB Type-C charging cable must meet certain requirements in order to be compli
 
 . Connector Type: The cable must have a Type-C connector on one end and a USB Type-C connector on the other end.
 . Pin Assignments: The cable must be wired according to the USB Type-C pin assignments, which include power and ground pins, data pins, and configuration pins.
-. Cable Length:.we will use cable of length 1m.
-. Voltage and Current Rating: The cable must be rated for a voltage of 20V and a current of 5A.
+. Cable Length: We will use cable of length 1 m.
+. Voltage and Current Rating: The cable must be rated for a voltage of 20 V and a current of 5 A.
 . Cable Impedance: The cable impedance should be 90 Ohm.
 . Connector Dimensions: The Type-C connector should be 8.4 mm wide and 2.6 mm thick.
-. Contact Resistance: The contact resistance of the Type-C connector should be less than or equal to 20 mOhm.
-. Insertion/Retention Force: The insertion force for a Type-C connector is 10N maximum, and the retention force is 7 N minimum.
+. Contact Resistance: The contact resistance of the Type-C connector should be equal to 20 mOhm.
+. Insertion/Retention Force: The insertion force for a Type-C connector is 10 N maximum, and the retention force is 7 N minimum.
 . Data transfer: The cable should support data transfer up to 10 Gbps.
-. Power Delivery: The cable should support power delivery up to 100W.
+. Power Delivery: The cable should support power delivery up to 100 W.
 . Audio/Video: The cable should not support audio/video signal transmission.
 . EMI/RFI Shielding: The cable should be shielded to protect against electromagnetic interference (EMI) and radio frequency interference (RFI).
 . Cable jacket: The cable jacket should be made of durable and flexible materials that can withstand repeated bending and twisting.
 . Compliance: The cable must comply with the USB Type-C specifications and be certified by the USB-IF (USB Implementers Forum).
 . Cable gauge: The copper wire diameter used in the cable affects the charging speed and power delivery capability, typically 26 or 28 gauge copper wire is used in Type-C cables.
-The diameter of the copper wire used in a Type-C mobile charging cable is typically around 0.5-1.0 mm.
-The diameter and thickness of the insulating PVC used to cover the wires of a Type-C charging cable can vary between different cables. The PVC diameter usually ranges from 4 to 7 mm, while the thickness can range from 0.5 to 1.5 mm .In general, the PVC should provide adequate insulation to protect the wires while also allowing the cable to be flexible and durable.
+The diameter of the copper wire used in a Type-C mobile charging cable will be 0.75 mm.
+The diameter and thickness of the insulating PVC used to cover the wires of a Type-C charging cable can vary between different cables. The PVC diameter usually will be 6 mm, while the thickness will be around 1 mm .In general, the PVC should provide adequate insulation to protect the wires while also allowing the cable to be flexible and durable.
 
 Manufacturing process
 ^^^^^^^^^^^^^^^^^^^^^
@@ -782,14 +782,14 @@ The materials required in the manufacturing process of a USB Type-C cable includ
 
 Pricing
 ^^^^^^^
-. Copper wire: The price of copper wire can range from $2 to $5 per pound.(360 - 900 Rs/kg). This will roughly cost us 10 -11 Rs. (considering 1m length wire and 4 copper wires with diameter 1mm)
+. Copper wire: The price of copper wire can range from $2 to $5 per pound (360 - 900 Rs/kg). This will roughly cost us 10 - 11 Rs (considering 1 m length wire and 4 copper wires with diameter 1 mm).
 . Insulation materials and cable jackets: The price of insulation materials and cable jackets, such as PVC or TPE, can range from $0.5 to $1 per pound (90 - 180 Rs/kg).
-This will cost us roughly 5 - 6 Rs (considering 1m length and inner radius of 2.5 mm and thickness 1 mm )
-. Shielding materials: The price of shielding materials, such as aluminum foil or braided wire, can range from $1 to $2 per pound.(180 - 360 Rs/kg) This will cost us roughly 5 - 6 Rs.
-. Connectors: The price of connectors can range from $0.1 to $0.5 per piece, depending on the type and quality of the connector. (18 - 90 Rs/kg)
-. Adhesive materials: The price of adhesive materials can range from $0.05 to $0.1 per pound. (9 - 18 Rs/kg)
+This will cost us roughly 5 - 6 Rs (considering 1 m length and inner radius of 2.5 mm and thickness 1 mm).
+. Shielding materials: The price of shielding materials, such as aluminum foil or braided wire, can range from $1 to $2 per pound (180 - 360 Rs/kg). This will cost us roughly 5 - 6 Rs.
+. Connectors: The price of connectors can range from $0.1 to $0.5 per piece, depending on the type and quality of the connector (18 - 90 Rs/kg).
+. Adhesive materials: The price of adhesive materials can range from $0.05 to $0.1 per pound (9 - 18 Rs/kg).
 . Labels, Markings, and Packaging: The cost of labels, markings, and packaging can vary widely depending on the materials and methods used.
-. Overall cost ~ around 25 - 30 Rs. (including additional costs of label, adhesive materials etc)
+. Overall cost ~ around 25 - 30 Rs (including additional costs of label, adhesive materials etc).
 
 //  (~180 Rs/kg == 1 dollar / pound)
 === Charger Adapter
@@ -797,7 +797,7 @@ Shape and Size
 ^^^^^^^^^^^^^^
 
 . Rectangular body (Box shape) with rounded corners.
-. The body will have a length of 7.5 cm, a width of 4.5 cm, and a depth of 2cm.
+. The body will have a length of 7.5 cm, a width of 4.5 cm, and a height of 2 cm.
 
 Materials
 ^^^^^^^^
@@ -811,22 +811,22 @@ Colour
 . Typically, we have chargers in black and white colors.
 . We can make chargers in different colors too, like red, yellow, etc.
 
-Standards
-^^^^^^^^^
-The battery charger should be designed according to IEEE-1547, SAE-J2894, and similar standards such that the amount of harmonic and dc current injected into the utility grid must be controlled within the preset limit.
+Standards & Compliances
+^^^^^^^^^^^^^^^^^^^^^^^
+The battery charger should be designed according to IEEE-1547, SAE-J2894, and similar standards such that the amount of harmonic and DC current injected into the utility grid must be controlled within the preset limit.
 
 There are several standards that mobile phone chargers must adhere to in order to ensure safe and efficient charging of devices. Some of the most important standards include:
 [start=1]
-. USB Charging: The USB (Universal Serial Bus) standard is widely used for charging mobile phones and other devices. USB chargers typically provide 5V of power and can deliver up to 2.5 watts (500 mA) of current.
+. USB Charging: The USB (Universal Serial Bus) standard is widely used for charging mobile phones and other devices. USB chargers typically provide 5 V of power and can deliver up to 2.5 watts (500 mA) of current.
 . USB Power Delivery (USB-PD): USB-PD is a newer standard that allows for higher power charging up to 100 watts. This standard allows for faster charging and also supports charging of laptops and other devices.
 
 These are the most common standards in the market, but there are others such as the European Union's Energy-related Products (ErP) Directive, which limits the standby power consumption of devices, and the safety standards like UL, CE and FCC.
 
 Our charger body should be compatible with these standards and should be safe to use at these specifications.
 
-Prices
+Pricing
 ^^^^^^
-The material we are using for charging is ABS (Acrylonitrile Butadiene Styrene), and the approximate weight of one charger body will be around 20-25 grams. As of Jan’22 - Dec’22 the price of ABS is around 95-125 Rupees per Kg. So, considering the mass production of the charger body we can assume that we can make 30-35 charger bodies per Kg of ABS material. Hence, it will cost around 4 Rupees per charger body.
+The material we are using for charging is ABS (Acrylonitrile Butadiene Styrene), and the approximate weight of one charger body will be around 20 g. As of Jan’22 - Dec’22 the price of ABS is around 95 - 125 Rs/kg. So, considering the mass production of the charger body we can assume that we can make 30 - 35 charger bodies per kg of ABS material. Hence, it will cost around 4 Rs per charger body.
 
 === Electric Plug Pin
 
@@ -846,13 +846,13 @@ Features
 . Provide Space Saving Connection and Installation
 . Corrosion and Rust Resistant
 . Provide High Electrical Conductivity
-. Available with Safety Standards and compliance
+. Available with Safety Standards and Compliance
 . Custom Specific Range also available
 
-Type- C
-^^^^^^^^
+Type-C
+^^^^^^^
 
-The Type C plug or Euro plug is ungrounded with two round pins that converge slightly towards their free ends.
+The Type-C plug or Euro plug is ungrounded with two round pins that converge slightly towards their free ends.
 
 Other Specifications
 ^^^^^^^^^^^^^^^^^^^^
@@ -992,14 +992,13 @@ Due to these reasons we started looking at SMPS circuits, which are not only muc
 ==== Second Iteration
 After exploring on the web, we found a lot of SMPS circuits whose components would only allow a maximum current of 1 A, which is when we came across WEBENCH Power Designer by Texas Instruments. This gave us a circuit based on our requirements. We later verified if whether the components provided by the tool were fit for use or not, which was followed by PCB Design and Simulation.
 
-kicad-circuit-1.png
-Simulation.jpg
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/kicad-circuit-1.png
-[img12,800,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/Simulation.png[img12,800,400,align="center"]
 [.text-center]
 _Figure 3. Circuit Diagram for our Charger_ 
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/Simulation.png[img12,800,400,align="center"]
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/Simulation.png[img12,400,400,align="center"]
 [.text-center]
 _Figure 4. Simulation results_ 
 
