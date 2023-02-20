@@ -1,12 +1,13 @@
 = ELP305| Design and Systems Laboratory
 :toc: left
   font-color: #333333
-:authors: Specifications Report
+:authors: Conclusion Report
 :sectids:
 :sectnums: all
 :stem: asciimath
+:pagenums:
 
-= Week 2 Report
+= Week 3 Report
 [caption="Tribe C: "]
 .Cadmus
 [%header,cols=2*]
@@ -21,7 +22,7 @@
 |Prof. Subrat Kar, Course Coordinator \|ELP305: Design and Systems Laboratory
 
 |Date of Submission
-|31/01/2023
+|21/02/2023
 |===
 
 
@@ -32,7 +33,6 @@
 The team division with their contact email and participation is given below:
 
 .Team Member Details Showing Participation
-
 [cols="1,1,1,1,1"]
 
 |===
@@ -509,75 +509,176 @@ The team division with their contact email and participation is given below:
 
 |===
 
-== Mind Map
-[plantuml,svg]
-----
-@startmindmap
+// == Mind Map
+// [plantuml,svg]
+// ----
+// @startmindmap
 
-+ *Specifications*
-++ Charger adapter
-++ Electric plug-in
-++ Charger cable
+// + *Specifications*
+// ++ Charger adapter
+// ++ Electric plug-in
+// ++ Charger cable
 
-@endmindmap  
-----
-[plantuml,svg]
-----
-@startmindmap
+// @endmindmap  
+// ----
+// [plantuml,svg]
+// ----
+// @startmindmap
 
-+ *Requirements*
-++ Input/Output
-++ Plug
-++ Safety features
+// + *Requirements*
+// ++ Input/Output
+// ++ Plug
+// ++ Safety features
 
-'tag::left[]
--- Cable
--- Connector
--- Extrior body
-'end::left[]
+// 'tag::left[]
+// -- Cable
+// -- Connector
+// -- Extrior body
+// 'end::left[]
 
-@endmindmap  
-----
+// @endmindmap  
+// ----
 
 == Gantt Chart
 
 [plantuml,svg]
 ----
-@startgantt
-[Distribution of sub-teams] lasts 6 days
-[Assigning tasks] lasts 4 days
-[Research-I] lasts 7 days
-[Software familiarization] lasts 6 days
-[Requirements compilation] lasts 5 days
+@startgantt 
+[Distribution of sub-teams] lasts 6 days 
+[Assigning tasks] lasts 4 days 
+[Research-I] lasts 7 days 
+[Software familiarization] lasts 6 days 
+[Requirements compilation] lasts 5 days 
 [Review-I] lasts 4 days
--- Phase Two --
-[Research-II] lasts 7 days
-[Specifications compilation] lasts 6 days
-[Review-II] lasts 5 days
--- Phase Three --
-[Prototype design] lasts 15 days
+-- Phase Two -- 
+[Research-II] lasts 7 days 
+[Specifications compilation] lasts 6 days 
+[Review-II] lasts 5 days 
+-- Phase Three -- 
+[Prototype design-I] lasts 8 days 
+[Prototype design-II] lasts 13 days 
+[Final product assembly] lasts 10 days
+[Final report compilation] lasts 10 days 
+[Review-III] lasts 5 days 
 
-Project starts 2023-01-07
+Project starts 2023-01-07 
 [Distribution of sub-teams] starts 2023-01-07
-[Assigning tasks] starts 2023-01-10
+[Assigning tasks] starts 2023-01-10 
 [Research-I] starts 2023-01-11
-[Software familiarization] starts 2023-01-10
-[Requirements compilation] starts 2023-01-17
-[Review-I] starts 2023-01-20
-[Research-II] starts 2023-01-21
-[Specifications compilation] starts 2023-01-23
-[Review-II] starts 2023-01-26
-[Prototype design] starts 2023-01-26
-today is 24 days after start and is colored in #AAF
+[Software familiarization] starts 2023-01-10 
+[Requirements compilation] starts 2023-01-17 
+[Review-I] starts 2023-01-20 
+[Research-II] starts 2023-01-21 
+[Specifications compilation] starts 2023-01-23 
+[Review-II] starts 2023-01-26 
+[Prototype design-I] starts 2023-01-26 
+[Prototype design-II] starts 2023-02-03
+[Final product assembly] starts 2023-02-11
+[Final report compilation] starts 2023-02-11
+[Review-III] starts 2023-02-17 
+today is 44 days after start and is colored in #AAF 
+2023-02-06 to 2023-02-10 are named [MINOR 1]
+2023-02-06 to 2023-02-10 are colored in salmon 
 @endgantt
 ----
 
-
-== Critical path
+// == Critical path
 
 == List of Abbreviations
+[cols="1,2,4"]
 
-== List of Figures
+|===
+|S.No. |Abbreviation |Stands for
+
+
+|1
+|Cdd
+|Bypass Capacitor
+
+|2
+|Cin
+|Input Capacitor 1
+
+|3
+|Cin2
+|Input Capacitor 2
+
+|4
+|Cout
+|Output Capacitor
+
+|5
+|D2
+|Schottky Barrier Diode 1
+
+|6
+|D3
+|Schottky Barrier Diode 3
+
+|7
+|Dac
+|Diode Bridge Rectifier
+
+|8
+|Dsnub
+|Snubber Diode
+
+|9
+|Dz1
+|Transient Voltage Suppressor
+
+|10
+|L1
+|Input Inductance
+
+|11
+|Rbld
+|Pre-Load Resistance
+
+|12
+|Rcs
+|Current Sense Resistor
+
+|13
+|Rcbc
+|Cable Compensation Resistance
+
+|14
+|Rdd
+|Bypass Resistor
+
+|15
+|Rfbb
+|Voltage Divider Lower Resistance
+
+|16
+|Rfbt
+|Voltage Divider Upper Resistance
+
+|17
+|Rl
+|Inner Resistance
+
+|18
+|Rlc
+|Line Compensation Resistor
+
+|19
+|T1
+|Transformer
+
+|20
+|U1
+|Flyback Controller
+
+|21
+|U2
+|Wakeup Monitor
+
+|22
+|M1
+|Mosfet
+|===
 
 == Requirements
 Here are the requirements we have compiled for the following:
@@ -591,8 +692,6 @@ Here are the requirements we have compiled for the following:
 2. The plug needs to be sturdy enough to endure being inserted and removed from the socket several times.
 3. There should be no sharp edges or other metal protrusions on the plug that might cause an electrical shock.
 4. The plug needs to be safe by the standards of the market it’s destined for, such as BIS in India.
-5. The connector should conform to current specifications for charging mobile devices.
-
 
 === Safety Features
 1. Over-voltage, over-current, and short-circuit protection.
@@ -602,20 +701,20 @@ Here are the requirements we have compiled for the following:
 5. There should be good insulation from interference, voltage surges and electrical noise. PP/PE insulation is the standard norm.
 
 === Cable
-1. A cable length of around 60-90 cm would be more suitable, as it allows for more flexibility in positioning the charger and the phone while charging.
-2. The length of the cable can have an effect on safety, as well as the thermodynamics of wire heating. Longer cables generally have more resistance than shorter cables, which can lead to an increase in the amount of heat generated during charging .This can be a safety concern, as excessive heat can damage the charger, the cable, and the device being charged.
+1. A cable length of 90 cm would be suitable, as it allows for more flexibility in positioning the charger and the phone while charging.
+2. The length of the cable can affect the safety and the thermodynamics of wire heating. Longer cables generally have more resistance than shorter cables, which can lead to an increase in the amount of heat generated during charging. This can be a safety concern, as excessive heat can damage the charger, the cable, and the device being charged.
 3. The potential of a short circuit or other electrical hazards increases with cable length, which is already more vulnerable to physical damage and wear and tear.
-4. Use only cables and chargers that have been certified as safe by the appropriate authorities, and only for their intended use, to reduce the potential for harm. That means not just making sure the cable isn’t frayed or broken, but also utilising the right cable for the device.
+4. Use only cables and chargers that have been certified as safe by the appropriate authorities and only for their intended use to reduce the potential for harm. That means not just ensuring the cable isn’t frayed or broken, but also utilising the suitable cable for the device.
 5. Thermodynamic considerations for wire heating should be made while designing both the cable and the charger to ensure maximum charging efficiency and to reduce the amount of heat created by the cable and the charger.
 
-
 === Connector
-1. Type-C USB connector for charging newer models of mobile phones after Dec 31, 2024 as it will become the standard in India.
+1. Type-C USB connector for charging newer models of mobile phones after Dec 31, 2024, as it will become the standard in India.
 2. Connector should have fast charging capability.
+3. The connector should conform to current specifications for charging mobile devices.
 
 === Exterior Body
-1. We should keep the size of the charger to be around 7.5 to 12.5 cm in length, and 2.5 to 5 cm in width for easy portability as well as light in weight.
-2. The charger should also be able to withstand sudden impacts without damage to the inner circuit, such as falling on the ground.
+1. We should keep the size of the charger to be 10 cm in length and 4 cm in width for easy portability as well as light in weight.
+2. The charger should also be able to withstand sudden impacts, such as falling on the ground, without damage to the inner circuit.
 
 == Specifications
 === Charger Cable
@@ -782,12 +881,233 @@ Other Specifications
 |No
 
 |===
+
 == Abstract
+This report includes the requirements and specifications for the mobile charger designed by tribe CADMUS. We first compiled a list of requirements any commoner would expect from a mobile charger. Upon researching about the same, we trimmed our requirements to specifications we could actually incorporate. Major focus was to make our device accessible and future ready, keeping in mind the legalities involved. We ensured that our mobile charger was compatible with each standard and was safe to use at these specifications. We also kept in mind the prices of various raw materials used in the charger for our aim of catering to the masses.
+
 == Motivation
-== Design Cycle
-=== System Diagram
-=== Simulation Results
+Exploring the device that we use everyday was actually the fun part. Observing the intricacies and realising the simplicity of the charger was motivating. It was thrilling to implement the electrical circuits knowledge we gained in high school and first year. The mechanical team realised size limitation most companies are facing and balanced the tradeoff in compactness and efficiency. We have also added the scope of improvement that was result of extensive brainstorming among our enthusiastic members.
+
 == Working
+// 
+A mobile charger is a device that converts AC (alternating current) power from a wall outlet into DC (direct current) power that can be used to charge the battery of a mobile phone. The following steps will explain how our mobile charger works:
+
+//
+1. The charger is plugged into an AC power outlet, which supplies the charger with the required voltage (220V AC, it can vary from 100-240V) and current to operate.
+
+2. The AC input is then passed through a bridge rectifier which converts it to DC voltage. This rectifier has 4 HD06-T diodes with 2 terminals for the input and output signal.
+
+3. The DC voltage then passed through a ripple remover which minimizes the AC ripples in the rectifier's output for a smoother output.
+
+4. This DC voltage produced is passed to a flyback controller (UCC28730) which converts DC back to high frequency AC. The UCC28730 is an isolated-flyback power supply controller that uses primary-side winding sensing to offer precise voltage and constant current regulation, doing away with the need for opto-coupler feedback circuits. It's main components are the following:
+a. _VS (Voltage Sense)_ - The VS pin is used to sense input voltage, output voltage, event timing, and Wait-state wake-up signaling. It is connected to a resistor-divider that runs from the auxiliary winding to ground. This pin also monitors the VS current produced through RS1 by the reflected bulk capacitor voltage during the MOSFET on-time in order to provide the AC-input Run and Stop thresholds and to adjust the current-sense threshold across the AC-input range.
+b. _CS (Current Sense)_ - The current-sense pin is connected to the current-sense resistor by a series resistor (RLC, RCS). The maximum current-sense threshold (VCST(max)) for IPP(max) is roughly 0.74 V, and the minimum current-sense threshold (VCST(min)) for IPP is roughly 0.25 V (min).
+c. _DRV (Gate Drive)_ - The DRV pin is connected to the MOSFET gate pin via a series resistor. A gate-drive signal with a 14 V maximum is provided by the gate driver.
+
+5. After getting a high frequency voltage from the flyback controller the voltage is stepped down using a RF Pulse Transformer. They are intended to match impedances, isolate DC currents between circuits, and step down voltage. It has 3 windings - Primary, Secondary and Auxiliary.
+
+6. Following the acquisition of the AC voltage, a half wave rectifier is used to convert the AC voltage to DC voltage. A 560 uF capacitor filters the DC voltage of the AC ripples  before being sent to the phone via a USB output.  
+
+[cols="1"]
+|===
+*Our input AC voltage was rectified to DC voltage, and this DC was then converted back to AC at a higher frequency. After that, the AC was stepped down and rectified to produce the final DC output. One may wonder why we can't convert the AC input directly to the final DC output.* +
+The size of the transformer is to blame. You would require a large transformer to step down to a lower voltage for the 220 V supply at a frequency of 50-60 Hz, which is an extremely low range, and this is not possible. Consequently, a high-frequency AC voltage is created with the aid of the flyback controller, which is then stepped down to a lower value by a transformer of an appropriate size.
+
+
+*Usage of Wake-Up monitor (UCC24650)* +
+The wake-up function operates in conjunction with the flyback controller (UCC28730). This feature permits light-load and no-load switching rates to approach 32 Hz to reduce losses but rouses the UCC28730 from its wait state (sleep mode) in the case of a major load step between power cycles. It is not necessary to have a large output capacitance despite the low frequencies in order to retain a good transient response. The UCC28730 monitors the VS input while it is in wait mode in case a wake-up signal arrives. When it does, it reacts instantly by executing a few high-frequency power cycles before resuming its operations in accordance with the control law to recover from the load-step transient and restore output voltage regulation.
+|===
+
+=== Working Flowchart
+[.text-center]
+[ditaa]
+----
+          +--------------+
+          | Input Signal |
+          | (220V, 50Hz) |
+          +--------------+
+                  |
+                  v
+          +--------------+
+          |     Bridge   |
+          |   Rectifier  |
+          +--------------+
+                  |
+                  V
+          +--------------+
+          |    Ripple    |
+          |    Remover   |
+          +--------------+
+                  |
+                  v
+          +--------------+
+          |    Flyback   |         Wake Up Signal
+          |   Controller | <-----------------+
+          +--------------+                   |
+                  |                  +--------------+
+                  v                  |    Wake Up   |
+          +--------------+           |    Monitor   |
+          |  Transformer |           +--------------+
+          +--------------+                   ^ 
+                  |                          |
+                  +--------------------------+
+                  |
+                  v        
+          +--------------+
+          |   Halfwave   |
+          |  Rectifier + |
+          |  Capacitor   |
+          +--------------+
+                  |
+                  v
+          +--------------+
+          |  USB Output  |
+          |   5V DC      |
+          +--------------+
+----
+
+== Design Cycle
+=== Circuit Design 
+The most fundamental part of designing a charger is its underlying circuit design. The Electrical Team of CADMUS attempted to design a circuit and tested it under various conditions to assess its feasibility. The circuit diagram for our attempt is shown below:
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
+[.text-center]
+_Figure 1. Circuit diagram for our charger_ 
+
+The following is the output-voltage vs time curve for the circuit:
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,800,400,align="center"]
+[.text-center]
+_Figure 2. Simulation results on KiCAD_ 
+
+As clearly visible, the circuit worked well, and it converged to the desirable output voltage of 5V quite quickly. However, it had a few drawbacks, so, we had to discard it.
+
+.Drawbacks:
+-	The frequencies at which this circuit would be operating would be around 50-60 Hz, which is relatively low. In our design, we require the use of a Step Down Transformer which would work at the said frequency. Such available transformers are usually quite large and bulky in size, and have low efficiency, that is, they generate a significant amount of heat. This would lead to thermal issues with the charger. 
+-	The circuit is very unstable with respect to sudden variations/surges in current/voltage. It needs to be protected from the same using fuse resistors. This can lead to unexpected heating of the circuit which can damage the components and dissipate unnecessary heat in order to maintain constant output voltage.
+
+Due to these reasons we started looking at SMPS circuits, which are not only much more energy efficient compared to linear regulators, but also allow for usage of smaller components. They are also capable of operating at a wide range of inputs.
+
+After exploring on the web, we found a lot of SMPS circuits whose components would only allow a maximum current of 1 A, which is when we came across WEBENCH Power Designer by Texas Instruments. This gave us a circuit based on our requirements. We later verified if whether the components provided by the tool were fit for use or not, which was followed by PCB Design and Simulation.
+
+=== Body Design
+
+The charger design involves two critical aspects, including CAD model design and 3D printing. To improve our models, we took apart a pre-existing mobile charger to gain insights. Our improvements included adding a backside lid and attaching it with an adhesive, leaving space for metal prongs on the front side, and filleting sharp edges to avoid potential hazards. Additionally, we incorporated a Type C port on the back lid to allow for future connectivity and engraved our tribe's logo (CADMUS) on the top side to prevent copying. The use of a backside lid for analysis and the incorporation of a Type C port align with the increasing use of this technology in the future.
+
+The size is sightly bugger than normal chargers as bigger PCB size which has almost no relation with the CAD model but is still a potential drawback for the model.
+
+== System Diagram
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215152.png[img1,800,400,align="center"]
+
+[.text-center]
+_Figure 1._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215227.png[img2,800,400,align="center"]
+
+[.text-center]
+_Figure 2._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215318.png[img3,800,400,align="center"]
+
+[.text-center]
+_Figure 3._ 
+
+{empty} + 
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215349.png[img4,800,400,align="center"]
+
+[.text-center]
+_Figure 4._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215440.png[img5,800,400,align="center"]
+
+[.text-center]
+_Figure 5._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215501.png[img6,800,400,align="center"]
+
+[.text-center]
+_Figure 6._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215530.png[img7,800,400,align="center"]
+
+[.text-center]
+_Figure 7._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215604.png[img8,800,400,align="center"]
+
+[.text-center]
+_Figure 8._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215643.png[img9,800,400,align="center"]
+
+[.text-center]
+_Figure 9._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,800,400,align="center"]
+
+[.text-center]
+_Figure 10._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_010535.png[img13,400,400,align="center"]
+
+[.text-center]
+_Figure 11._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011127.png[img14,400,400,align="center"]
+
+[.text-center]
+_Figure 12._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011147.png[img15,400,400,align="center"]
+
+[.text-center]
+_Figure 13._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011154.png[img16,400,400,align="center"]
+
+[.text-center]
+_Figure 14._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011225.png[img17,400,400,align="center"]
+
+[.text-center]
+_Figure 15._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011240.png[img17,400,400,align="center"]
+
+[.text-center]
+_Figure 16._ 
+
 == References
 [start=1]
 . Patel Mech. Available at: https://patelmech.com/products/electrical-parts/electrical-plug-pins/ (Accessed: January 31, 2023). 
@@ -798,8 +1118,6 @@ Other Specifications
 . P. et al. (2022) How to read Smartphone Charger Specifications, Inquisitive Universe. Available at: https://inquisitiveuniverse.com/2021/04/21/how-to-read-smartphone-charger-specifications/ (Accessed: January 31, 2023). 
 . USB Type-C® Cable and Connector Specification, USB-IF. https://www.usb.org/usb-type-cr-cable-and-connector-specification/ (Accessed: January 31, 2023). 
 . Brant, T. (2022, October 26). What Is USB-C? An Explainer. PCMAG. https://www.pcmag.com/how-to/what-is-usb-c-an-explainer/ (Accessed: January 31, 2023). 
- 
-
 
 
  
