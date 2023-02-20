@@ -947,27 +947,40 @@ image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/
 [.text-center]
 _Figure 1._ 
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215227.png[img2,400,800,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215318.png[img3,400,800,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215227.png[img2,800,400,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215349.png[img4,400,800,align="center"]
+[.text-center]
+_Figure 1._ 
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215440.png[img5,400,800,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215501.png[img6,400,800,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215318.png[img3,800,400,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215530.png[img7,400,800,align="center"]
+[.text-center]
+_Figure 1._ 
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215604.png[img8,400,800,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215643.png[img9,400,800,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215349.png[img4,800,400,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,400,800,align="center"]
+[.text-center]
+_Figure 1._ 
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,400,800,align="center"]
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,400,800,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215440.png[img5,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215501.png[img6,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215530.png[img7,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215604.png[img8,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215643.png[img9,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/PCB%20Photos/Screenshot%202023-02-20%20215759.png[img10,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/circuit.jpg[img11,800,400,align="center"]
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/v_vs_t_circuit.png[img12,800,400,align="center"]
 
 == Maintenance
 
