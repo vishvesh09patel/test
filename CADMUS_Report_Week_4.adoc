@@ -571,6 +571,14 @@ Project starts 2023-01-07
 today is 24 days after start and is colored in #AAF
 @endgantt
 ----
+
+
+== Critical path
+
+== List of Abbreviations
+
+== List of Figures
+
 == Requirements
 Here are the requirements we have compiled for the following:
 
@@ -774,6 +782,15 @@ Other Specifications
 |No
 
 |===
+== Abstract
+== Motivation
+== Design Cycle
+=== System Diagram
+=== Simulation Results
+== Working
+== Maintenance
+== Bill of Materials + Vendors
+== Further Scope
 
 == References
 [start=1]

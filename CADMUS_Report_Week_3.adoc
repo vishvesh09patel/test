@@ -571,6 +571,14 @@ Project starts 2023-01-07
 today is 24 days after start and is colored in #AAF
 @endgantt
 ----
+
+
+== Critical path
+
+== List of Abbreviations
+
+== List of Figures
+
 == Requirements
 Here are the requirements we have compiled for the following:
 
@@ -774,7 +782,12 @@ Other Specifications
 |No
 
 |===
-
+== Abstract
+== Motivation
+== Design Cycle
+=== System Diagram
+=== Simulation Results
+== Working
 == References
 [start=1]
 . Patel Mech. Available at: https://patelmech.com/products/electrical-parts/electrical-plug-pins/ (Accessed: January 31, 2023). 
