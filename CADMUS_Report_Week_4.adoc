@@ -1083,7 +1083,45 @@ _Figure 12._
 
 {empty} +
 
+<<<<<<< HEAD
 >>>>>>> 82431ce6cd452eaccb1cadb625e3cd7034b8abf4
+=======
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001752.png[img13,400,400,align="center"]
+
+[.text-center]
+_Figure 13._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001817.png[img14,400,400,align="center"]
+
+[.text-center]
+_Figure 14._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001853.png[img15,400,400,align="center"]
+
+[.text-center]
+_Figure 15._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_002147.png[img16,400,400,align="center"]
+
+[.text-center]
+_Figure 16._ 
+
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_003752.png[img17,400,400,align="center"]
+
+[.text-center]
+_Figure 17._ 
+
+{empty} +
+
+>>>>>>> e1c22f2641c625a2f1d45e631fa3d5fe7ccd16f0
 == Maintenance
 
 == Future Scope
