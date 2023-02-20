@@ -1075,32 +1075,38 @@ _Figure 11._
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001817.png[img14,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011127.png[img14,400,400,align="center"]
 
 [.text-center]
 _Figure 12._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_001853.png[img15,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011147.png[img15,400,400,align="center"]
 
 [.text-center]
 _Figure 13._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_002147.png[img16,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011154.png[img16,400,400,align="center"]
 
 [.text-center]
 _Figure 14._ 
 
 {empty} +
 
-image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_003752.png[img17,400,400,align="center"]
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011225.png[img17,400,400,align="center"]
 
 [.text-center]
 _Figure 15._ 
 
+{empty} +
+
+image::https://raw.githubusercontent.com/vishvesh09patel/test/main/CAD%20designs/Screenshot_20230221_011240.png[img17,400,400,align="center"]
+
+[.text-center]
+_Figure 16._ 
 
 == Maintenance
 The charger would come with clear instructions regarding its usage, including information on how to properly connect it to a device and how to troubleshoot common issues that users might face while using the product.
