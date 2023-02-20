@@ -1,0 +1,499 @@
+=== Team Members
+
+[cols="1,1,1,1,1,1"]
+
+|===
+|S.No. |Entry Number |Name |Role |email(IITD) |Participation (0..1)
+
+|1
+|2020EE10527
+|Prateek Mishra
+|Overall Coordinator
+|ee1200527@iitd.ac.in
+|
+
+|2
+|2020EE30574
+|Aditya Jaju
+|Standards Coordinator
+|ee3200574@iitd.ac.in
+|
+
+|3
+|2020EE10511
+|Manas Jain
+|Standards Coordinator
+|ee1200511@iitd.ac.in
+|
+
+|4
+|2020EE10454
+|Aaryan Goyal
+|Mechanical Coordinator
+|ee1200454@iitd.ac.in
+|
+
+|5
+|2020EE10672
+|Shubh Goel
+|Mechanical Coordinator
+|ee1200672@iitd.ac.in
+|
+
+|6
+|2020EE10479
+|Atif Anwer
+|Electrical Coordinator
+|ee1200479@iitd.ac.in
+|
+
+|7
+|2020EE10503
+|Kanishk Goel
+|Electrical Coordinator
+|ee1200503@iitd.ac.in
+|
+
+|8
+|2020MT10777
+|Aadya Agrawal
+|Documentation Coordinator
+|mt1200777@iitd.ac.in
+|
+
+|9
+|2020MT10858
+|Tushar Sethi
+|Documentation Coordinator
+|mt1200858@iitd.ac.in
+|
+
+|10
+|2020EE30163
+|Dakshit Babbar
+|Documentation
+|ee3200163@iitd.ac.in
+|
+
+|11
+|2020MT10863
+|Yashas Kedia
+|Documentation
+|mt1200863@iitd.ac.in
+|
+
+|12
+|2020MT60307
+|Tushita Pandey
+|Documentation
+|mt6200307@iitd.ac.in
+|
+
+|13
+|2020MT10887
+|Pulkit Sharma
+|Documentation
+|mt1200887@iitd.ac.in
+|
+
+|14
+|2020MT60986
+|Yash Pravin Shirke
+|Documentation
+|mt6200986@iitd.ac.in
+|
+
+|15
+|2020MT10816
+|Laksh Gupta
+|Documentation
+|mt1200816@iitd.ac.in
+|
+
+|16
+|2020MT10785
+|Akshita Mangal
+|Documentation
+|mt1200785@iitd.ac.in
+|
+
+|17
+|2020MT60896
+|Vishvesh Patel
+|Documentation
+|mt6200896@iitd.ac.in
+|
+
+|18
+|2020MT10845
+|Saurabh Jha
+|Documentation
+|mt1200845@iitd.ac.in
+|
+
+|19
+|2020MT10790
+|Aryansh Bansal
+|Documentation
+|mt1200790@iitd.ac.in
+|
+
+|20
+|2020EE10490
+|Ekansh Singh
+|Documentation
+|ee1200490@iitd.ac.in
+|
+
+|21
+|2020MT10804
+|Gautam Gosain
+|Documentation
+|mt1200804@iitd.ac.in
+|
+
+|22
+|2020MT60581
+|Anmol Sharma
+|Documentation
+|mt6200581@iitd.ac.in
+|
+
+|23
+|2020MT60571
+|Yuyutsu Saini
+|Documentation
+|mt6200571@iitd.ac.in
+|
+
+|24
+|2020MT10836
+|Rhythm Gupta
+|Documentation
+|mt1200836@iitd.ac.in
+|
+
+|25
+|2020EE30632
+|Vipul Kaswan
+|Electrical
+|ee3200632@iitd.ac.in
+|
+
+|26
+|2020EE10583
+|Anurag Gupta
+|Electrical
+|ee1200583@iitd.ac.in
+|
+
+|27
+|2020MT60865
+|Aakrity Pandey
+|Electrical
+|mt6200865@iitd.ac.in
+|
+
+|28
+|2020EE30585
+|Ashish Jagrawal
+|Electrical
+|ee3200585@iitd.ac.in
+|
+
+|29
+|2020EE30624
+|Sarrah Samaiyah
+|Electrical
+|ee3200624@iitd.ac.in
+|
+
+|30
+|2020EE30573
+|Aditya Agrawal
+|Electrical
+|ee3200573@iitd.ac.in
+|
+
+|31
+|2020MT10465
+|Akash Sinha
+|Electrical
+|mt1200465@iitd.ac.in
+|
+
+|32
+|2020EE10539
+|Rashee Agarwal
+|Electrical
+|ee1200539@iitd.ac.in
+|
+
+|33
+|2020EE10458
+|Adit Malhotra
+|Electrical
+|ee1200458@iitd.ac.in
+|
+
+|34
+|2020EE10491
+|Etiksha Jain
+|Electrical
+|ee1200491@iitd.ac.in
+|
+
+|35
+|2020EE10509
+|Mahesh
+|Electrical
+|ee1200509@iitd.ac.in
+|
+
+|36
+|2020EE10489
+|E Spandana
+|Electrical
+|ee1200489@iitd.ac.in
+|
+
+|37
+|2020EE10530
+|Priyanshu Verma
+|Electrical
+|ee1200530@iitd.ac.in
+|
+
+|38
+|2020EE10461
+|Aditya Singh
+|Electrical
+|ee1200461@iitd.ac.in
+|
+
+|39
+|2020EE30015
+|Bhavya Shah
+|Electrical
+|ee3200015@iitd.ac.in
+|
+
+|40
+|2020EE10589
+|Bismandeep Singh
+|Electrical
+|ee1200589@iitd.ac.in
+|
+
+|41
+|2019EE30575
+|Jay Bisht
+|Electrical
+|ee3200575@iitd.ac.in
+|
+
+|42
+|2019MT10698
+|Kanishk Singhal
+|Electrical
+|mt1190698@iitd.ac.in
+|
+
+|43
+|2020EE10476
+|Aryan Sinha
+|Mechanical
+|ee1200476@iitd.ac.in
+|
+
+|44
+|2020MT10825
+|Nikhil Agrawal
+|Mechanical
+|mt1200825@iitd.ac.in
+|
+
+|45
+|2020MT10853
+|Shubh Harkawat
+|Mechanical
+|mt1200853@iitd.ac.in
+|
+
+|46
+|2020EE10495
+|Guttikonda Goutham Srinivas
+|Mechanical
+|ee1200495@iitd.ac.in
+|
+
+|47
+|2020EE10481
+|Ayush Kumar
+|Mechanical
+|ee1200481@iitd.ac.in
+|
+
+|48
+|2020EE10547
+|Sampan Manna
+|Mechanical
+|ee1200547@iitd.ac.in
+|
+
+|49
+|2020EE30593
+|Divyans Yadav
+|Mechanical
+|ee3200593@iitd.ac.in
+|
+
+|50
+|2020EE30144
+|Vanshita Garg
+|Mechanical
+|ee3200144@iitd.ac.in
+|
+
+|51
+|2020MT10841
+|Saksham Singh
+|Mechanical
+|mt1200841@iitd.ac.in
+|
+
+|52
+|2020EE10544
+|Saksham Mangla
+|Mechanical
+|ee1200544@iitd.ac.in
+|
+
+|53
+|2020EE10587
+|Bharat Kumar
+|Mechanical
+|ee1200587@iitd.ac.in
+|
+
+|54
+|2020EE30613
+|Pranav Bansal
+|Mechanical
+|ee3200613@iitd.ac.in
+|
+
+|55
+|2020EE10206
+|Aadweek Verma
+|Mechanical
+|ee1200206@iitd.ac.in
+|
+
+|56
+|2020MT10828
+|Nishant Agarwal
+|Mechanical
+|mt1200828@iitd.ac.in
+|
+
+|57
+|2020MT10806
+|Harshit Goyal
+|Mechanical
+|mt1200806@iitd.ac.in
+|
+
+|58
+|2020MT10143
+|Vansh Kachhwal
+|Standards (Mechanical)
+|mt1200143@iitd.ac.in
+|
+
+|59
+|2020MT10619
+|Rahul Gupta
+|Standards (Mechanical)
+|mt1200619@iitd.ac.in
+|
+
+|60
+|2020EE10560
+|Tanish Singh Tak
+|Standards (Electrical)
+|ee1200560@iitd.ac.in
+|
+
+|61
+|2020EE10579
+|Akshit Bhardwaj
+|Standards (Electrical)
+|ee1200579@iitd.ac.in
+|
+
+|62
+|2020EE10540
+|Risha Singh
+|Standards (Plug)
+|ee1200540@iitd.ac.in
+|
+
+|63
+|2020EE10552
+|Sharda Kriti Modanwal
+|Standards (Plug)
+|ee1200552@iitd.ac.in
+|
+
+|64
+|2020EE10484
+|Chaitanya Agrawal
+|Standards (Pins)
+|ee1200484@iitd.ac.in
+|
+
+|65
+|2020EE10523
+|Prahas Ranjan
+|Standards (Pins)
+|ee1200523@iitd.ac.in
+|
+
+|66
+|2020MT10854
+|Simran Malik
+|Standards (Main Body)
+|mt1200854@iitd.ac.in
+|
+
+|67
+|2020MT10838
+|Ritika Soni
+|Standards (Main Body)
+|mt1200838@iitd.ac.in
+|
+
+|68
+|2019EE10143
+|Vansh Gupta
+|Standards (Cable)
+|ee1190143@iitd.ac.in
+|
+
+|69
+|2020EE10558
+|Sumant Pareek
+|Standards (Cable)
+|ee1200558@iitd.ac.in
+|
+
+|70
+|2020MT10861
+|Vatsal Malpani
+|Standards
+|mt1200861@iitd.ac.in
+|
+
+
+|===
