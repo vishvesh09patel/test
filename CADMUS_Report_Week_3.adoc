@@ -1,0 +1,798 @@
+= ELP305| Design and Systems Laboratory
+:toc: left
+  font-color: #333333
+:authors: Specifications Report
+:sectids:
+:sectnums: all
+:stem: asciimath
+
+= Week 2 Report
+[caption="Tribe C: "]
+.Cadmus
+[%header,cols=2*]
+|===
+|Id
+|v4.0
+
+|Tribe
+|Tribe C
+
+|Submitted to
+|Prof. Subrat Kar, Course Coordinator \|ELP305: Design and Systems Laboratory
+
+|Date of Submission
+|31/01/2023
+|===
+
+
+
+
+== Team
+
+The team division with their contact email and participation is given below:
+
+.Team Member Details Showing Participation
+
+[cols="1,1,1,1,1"]
+
+|===
+|Entry Number |Name |Role |email(IITD) |Participation (0..1)
+
+|2020EE10527
+|Prateek Mishra
+|Overall Coordinator
+|ee1200527@iitd.ac.in
+|1
+
+|2020EE30574
+|Aditya Jaju
+|Standards Coordinator
+|ee3200574@iitd.ac.in
+|1
+
+|2020EE10511
+|Manas Jain
+|Standards Coordinator
+|ee1200511@iitd.ac.in
+|1
+
+|2020EE10454
+|Aaryan Goyal
+|Mechanical Coordinator
+|ee1200454@iitd.ac.in
+|1
+
+|2020EE10672
+|Shubh Goel
+|Mechanical Coordinator
+|ee1200672@iitd.ac.in
+|1
+
+|2020EE10479
+|Atif Anwer
+|Electrical Coordinator
+|ee1200479@iitd.ac.in
+|1
+
+|2020EE10503
+|Kanishk Goel
+|Electrical Coordinator
+|ee1200503@iitd.ac.in
+|1
+
+|2020MT10777
+|Aadya Agrawal
+|Documentation Coordinator
+|mt1200777@iitd.ac.in
+|1
+
+|2020MT10858
+|Tushar Sethi
+|Documentation Coordinator
+|mt1200858@iitd.ac.in
+|1
+
+|2020EE30163
+|Dakshit Babbar
+|Documentation
+|ee3200163@iitd.ac.in
+|1
+
+|2020MT10863
+|Yashas Kedia
+|Documentation
+|mt1200863@iitd.ac.in
+|1
+
+|2020MT60307
+|Tushita Pandey
+|Documentation
+|mt6200307@iitd.ac.in
+|1
+
+|2020MT10887
+|Pulkit Sharma
+|Documentation
+|mt1200887@iitd.ac.in
+|1
+
+|2020MT60986
+|Yash Pravin Shirke
+|Documentation
+|mt6200986@iitd.ac.in
+|1
+
+|2020MT10816
+|Laksh Gupta
+|Documentation
+|mt1200816@iitd.ac.in
+|1
+
+|2020MT10785
+|Akshita Mangal
+|Documentation
+|mt1200785@iitd.ac.in
+|1
+
+|2020MT60896
+|Vishvesh Patel
+|Documentation
+|mt6200896@iitd.ac.in
+|1
+
+|2020MT10845
+|Saurabh Jha
+|Documentation
+|mt1200845@iitd.ac.in
+|1
+
+|2020MT10790
+|Aryansh Bansal
+|Documentation
+|mt1200790@iitd.ac.in
+|1
+
+|2020EE10490
+|Ekansh Singh
+|Documentation
+|ee1200490@iitd.ac.in
+|1
+
+|2020MT10804
+|Gautam Gosain
+|Documentation
+|mt1200804@iitd.ac.in
+|1
+
+|2020MT60581
+|Anmol Sharma
+|Documentation
+|mt6200581@iitd.ac.in
+|1
+
+|2020MT60571
+|Yuyutsu Saini
+|Documentation
+|mt6200571@iitd.ac.in
+|1
+
+|2020MT10836
+|Rhythm Gupta
+|Documentation
+|mt1200836@iitd.ac.in
+|1
+
+|2020EE30632
+|Vipul Kaswan
+|Electrical
+|ee3200632@iitd.ac.in
+|1
+
+|2020EE10583
+|Anurag Gupta
+|Electrical
+|ee1200583@iitd.ac.in
+|1
+
+|2020MT60865
+|Aakrity Pandey
+|Electrical
+|mt6200865@iitd.ac.in
+|1
+
+|2020EE30585
+|Ashish Jagrawal
+|Electrical
+|ee3200585@iitd.ac.in
+|1
+
+|2020EE30624
+|Sarrah Samaiyah
+|Electrical
+|ee3200624@iitd.ac.in
+|1
+
+|2020EE30573
+|Aditya Agrawal
+|Electrical
+|ee3200573@iitd.ac.in
+|1
+
+|2020MT10465
+|Akash Sinha
+|Electrical
+|mt1200465@iitd.ac.in
+|1
+
+|2020EE10539
+|Rashee Agarwal
+|Electrical
+|ee1200539@iitd.ac.in
+|1
+
+|2020EE10458
+|Adit Malhotra
+|Electrical
+|ee1200458@iitd.ac.in
+|1
+
+|2020EE10491
+|Etiksha Jain
+|Electrical
+|ee1200491@iitd.ac.in
+|1
+
+|2020EE10509
+|Mahesh
+|Electrical
+|ee1200509@iitd.ac.in
+|1
+
+|2020EE10489
+|E Spandana
+|Electrical
+|ee1200489@iitd.ac.in
+|1
+
+|2020EE10530
+|Priyanshu Verma
+|Electrical
+|ee1200530@iitd.ac.in
+|1
+
+|2020EE10461
+|Aditya Singh
+|Electrical
+|ee1200461@iitd.ac.in
+|1
+
+|2020EE30015
+|Bhavya Shah
+|Electrical
+|ee3200015@iitd.ac.in
+|1
+
+|2020EE10589
+|Bismandeep Singh
+|Electrical
+|ee1200589@iitd.ac.in
+|1
+
+|2019EE30575
+|Jay Bisht
+|Electrical
+|ee3200575@iitd.ac.in
+|1
+
+|2019MT10698
+|Kanishk Singhal
+|Electrical
+|mt1190698@iitd.ac.in
+|1
+
+|2020EE10476
+|Aryan Sinha
+|Mechanical
+|ee1200476@iitd.ac.in
+|1
+
+|2020MT10825
+|Nikhil Agrawal
+|Mechanical
+|mt1200825@iitd.ac.in
+|1
+
+|2020MT10853
+|Shubh Harkawat
+|Mechanical
+|mt1200853@iitd.ac.in
+|1
+
+|2020EE10495
+|Guttikonda Goutham Srinivas
+|Mechanical
+|ee1200495@iitd.ac.in
+|1
+
+|2020EE10481
+|Ayush Kumar
+|Mechanical
+|ee1200481@iitd.ac.in
+|1
+
+|2020EE10547
+|Sampan Manna
+|Mechanical
+|ee1200547@iitd.ac.in
+|1
+
+|2020EE30593
+|Divyans Yadav
+|Mechanical
+|ee3200593@iitd.ac.in
+|1
+
+|2020EE30144
+|Vanshita Garg
+|Mechanical
+|ee3200144@iitd.ac.in
+|1
+
+|2020MT10841
+|Saksham Singh
+|Mechanical
+|mt1200841@iitd.ac.in
+|1
+
+|2020EE10544
+|Saksham Mangla
+|Mechanical
+|ee1200544@iitd.ac.in
+|1
+
+|2020EE10587
+|Bharat Kumar
+|Mechanical
+|ee1200587@iitd.ac.in
+|1
+
+|2020EE30613
+|Pranav Bansal
+|Mechanical
+|ee3200613@iitd.ac.in
+|1
+
+|2020EE10206
+|Aadweek Verma
+|Mechanical
+|ee1200206@iitd.ac.in
+|1
+
+|2020MT10828
+|Nishant Agarwal
+|Mechanical
+|mt1200828@iitd.ac.in
+|1
+
+|2020MT10806
+|Harshit Goyal
+|Mechanical
+|mt1200806@iitd.ac.in
+|1
+
+|2020MT10143
+|Vansh Kachhwal
+|Standards (Mechanical)
+|mt1200143@iitd.ac.in
+|1
+
+|2020MT10619
+|Rahul Gupta
+|Standards (Mechanical)
+|mt1200619@iitd.ac.in
+|1
+
+|2020EE10560
+|Tanish Singh Tak
+|Standards (Electrical)
+|ee1200560@iitd.ac.in
+|1
+
+|2020EE10579
+|Akshit Bhardwaj
+|Standards (Electrical)
+|ee1200579@iitd.ac.in
+|1
+
+|2020EE10540
+|Risha Singh
+|Standards (Plug)
+|ee1200540@iitd.ac.in
+|1
+
+|2020EE10552
+|Sharda Kriti Modanwal
+|Standards (Plug)
+|ee1200552@iitd.ac.in
+|1
+
+|2020EE10484
+|Chaitanya Agrawal
+|Standards (Pins)
+|ee1200484@iitd.ac.in
+|1
+
+|2020EE10523
+|Prahas Ranjan
+|Standards (Pins)
+|ee1200523@iitd.ac.in
+|1
+
+|2020MT10854
+|Simran Malik
+|Standards (Main Body)
+|mt1200854@iitd.ac.in
+|1
+
+|2020MT10838
+|Ritika Soni
+|Standards (Main Body)
+|mt1200838@iitd.ac.in
+|1
+
+|2019EE10143
+|Vansh Gupta
+|Standards (Cable)
+|ee1190143@iitd.ac.in
+|1
+
+|2020EE10558
+|Sumant Pareek
+|Standards (Cable)
+|ee1200558@iitd.ac.in
+|1
+
+|===
+
+== Document Statistics
+
+.Document Statistics
+[cols=",~",width=100%]
+|===
+
+| Key
+| Value
+
+| Word Count
+| 4379
+
+| Number of sentences
+| 465
+
+| Average number of words per sentence
+| 9.68
+
+|===
+
+
+=== Readability Indices
+
+.Readability Indices Values And Ideal Ranges
+[cols=",,",options="header"]
+|===
+
+|Index
+|Value
+|Range
+
+|Readibility
+|60
+|0-100
+
+|Gunning Fog Index
+|8.6
+|0-20
+
+
+|Flesch Reading Ease
+|39.4
+|0-100
+
+|Coleman-Liau Index
+|13.24
+|0 - (17+)
+
+|Automated Readability Index
+| 11
+| 5-22
+
+
+|===
+
+== Mind Map
+[plantuml,svg]
+----
+@startmindmap
+
++ *Specifications*
+++ Charger adapter
+++ Electric plug-in
+++ Charger cable
+
+@endmindmap  
+----
+[plantuml,svg]
+----
+@startmindmap
+
++ *Requirements*
+++ Input/Output
+++ Plug
+++ Safety features
+
+'tag::left[]
+-- Cable
+-- Connector
+-- Extrior body
+'end::left[]
+
+@endmindmap  
+----
+
+== Gantt Chart
+
+[plantuml,svg]
+----
+@startgantt
+[Distribution of sub-teams] lasts 6 days
+[Assigning tasks] lasts 4 days
+[Research-I] lasts 7 days
+[Software familiarization] lasts 6 days
+[Requirements compilation] lasts 5 days
+[Review-I] lasts 4 days
+-- Phase Two --
+[Research-II] lasts 7 days
+[Specifications compilation] lasts 6 days
+[Review-II] lasts 5 days
+-- Phase Three --
+[Prototype design] lasts 15 days
+
+Project starts 2023-01-07
+[Distribution of sub-teams] starts 2023-01-07
+[Assigning tasks] starts 2023-01-10
+[Research-I] starts 2023-01-11
+[Software familiarization] starts 2023-01-10
+[Requirements compilation] starts 2023-01-17
+[Review-I] starts 2023-01-20
+[Research-II] starts 2023-01-21
+[Specifications compilation] starts 2023-01-23
+[Review-II] starts 2023-01-26
+[Prototype design] starts 2023-01-26
+today is 24 days after start and is colored in #AAF
+@endgantt
+----
+== Requirements
+Here are the requirements we have compiled for the following:
+
+=== Input/Output
+1. Input Voltage: 100-240V AC, 50-60 Hz
+2. Output Voltage: 5V and 9V with maximum output current of 2.4A and 1.67A respectively
+
+=== Plug
+1. The plug should fit well in the socket to prevent it from being accidentally pulled out.
+2. The plug needs to be sturdy enough to endure being inserted and removed from the socket several times.
+3. There should be no sharp edges or other metal protrusions on the plug that might cause an electrical shock.
+4. The plug needs to be safe by the standards of the market it’s destined for, such as BIS in India.
+5. The connector should conform to current specifications for charging mobile devices.
+
+
+=== Safety Features
+1. Over-voltage, over-current, and short-circuit protection.
+2. FCC, CE, RoHS, and UL certification for safety and quality assurance.
+3. Energy efficiency compliance with Bureau of Energy Efficiency (BEE) standards.
+4. High resistance in a circuit may cause other parts to overheat and fail. To be safe, we should aim for a temperature of 45°C or less while operating at full capacity.
+5. There should be good insulation from interference, voltage surges and electrical noise. PP/PE insulation is the standard norm.
+
+=== Cable
+1. A cable length of around 60-90 cm would be more suitable, as it allows for more flexibility in positioning the charger and the phone while charging.
+2. The length of the cable can have an effect on safety, as well as the thermodynamics of wire heating. Longer cables generally have more resistance than shorter cables, which can lead to an increase in the amount of heat generated during charging .This can be a safety concern, as excessive heat can damage the charger, the cable, and the device being charged.
+3. The potential of a short circuit or other electrical hazards increases with cable length, which is already more vulnerable to physical damage and wear and tear.
+4. Use only cables and chargers that have been certified as safe by the appropriate authorities, and only for their intended use, to reduce the potential for harm. That means not just making sure the cable isn’t frayed or broken, but also utilising the right cable for the device.
+5. Thermodynamic considerations for wire heating should be made while designing both the cable and the charger to ensure maximum charging efficiency and to reduce the amount of heat created by the cable and the charger.
+
+
+=== Connector
+1. Type-C USB connector for charging newer models of mobile phones after Dec 31, 2024 as it will become the standard in India.
+2. Connector should have fast charging capability.
+
+=== Exterior Body
+1. We should keep the size of the charger to be around 7.5 to 12.5 cm in length, and 2.5 to 5 cm in width for easy portability as well as light in weight.
+2. The charger should also be able to withstand sudden impacts without damage to the inner circuit, such as falling on the ground.
+
+== Specifications
+=== Charger Cable
+Requirements of a USB type C Cable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A USB Type-C charging cable must meet certain requirements in order to be compliant with the USB Type-C specifications. These requirements include:
+
+. Connector Type: The cable must have a Type-C connector on one end and a USB Type-C connector on the other end.
+. Pin Assignments: The cable must be wired according to the USB Type-C pin assignments, which include power and ground pins, data pins, and configuration pins.
+. Cable Length:.we will use cable of length 1m.
+. Voltage and Current Rating: The cable must be rated for a voltage of 20V and a current of 5A.
+. Cable Impedance: The cable impedance should be 90 Ohm.
+. Connector Dimensions: The Type-C connector should be 8.4 mm wide and 2.6 mm thick.
+. Contact Resistance: The contact resistance of the Type-C connector should be less than or equal to 20 mOhm.
+. Insertion/Retention Force: The insertion force for a Type-C connector is 10N maximum, and the retention force is 7 N minimum.
+. Data transfer: The cable should support data transfer up to 10 Gbps.
+. Power Delivery: The cable should support power delivery up to 100W.
+. Audio/Video: The cable should not support audio/video signal transmission.
+. EMI/RFI Shielding: The cable should be shielded to protect against electromagnetic interference (EMI) and radio frequency interference (RFI).
+. Cable jacket: The cable jacket should be made of durable and flexible materials that can withstand repeated bending and twisting.
+. Compliance: The cable must comply with the USB Type-C specifications and be certified by the USB-IF (USB Implementers Forum).
+. Cable gauge: The copper wire diameter used in the cable affects the charging speed and power delivery capability, typically 26 or 28 gauge copper wire is used in Type-C cables.
+The diameter of the copper wire used in a Type-C mobile charging cable is typically around 0.5-1.0 mm.
+The diameter and thickness of the insulating PVC used to cover the wires of a Type-C charging cable can vary between different cables. The PVC diameter usually ranges from 4 to 7 mm, while the thickness can range from 0.5 to 1.5 mm .In general, the PVC should provide adequate insulation to protect the wires while also allowing the cable to be flexible and durable.
+
+Manufacturing process
+^^^^^^^^^^^^^^^^^^^^^
+The manufacturing process of a Type-C USB cable involves several steps:
+
+. Raw materials procurement: The first step is to acquire the raw materials required for the cable, such as copper wire, PVC insulation, and the Type-C connector.
+. Stranding: The copper wire is then stranded together to form the conductors of the cable. The number of wires used and the way they are stranded together will depend on the desired specifications of the cable, such as its thickness and flexibility.
+. Insulation: The stranded wires are then coated with PVC insulation to protect them and prevent electrical interference.
+. Connector assembly: The Type-C connector is then assembled, which involves inserting the conductors into the connector and soldering them in place.
+. Cable assembly: The insulated conductors are then inserted into the PVC jacket and the connector is attached to one end of the cable.
+. Testing: The cable is then tested to ensure that it meets the required specifications and standards. This includes testing for continuity, insulation resistance, and electrical safety.
+. Packaging: The final step is to package the cable for shipment to customers.
+
+Standards & Compliances for  a USB type-C Cable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The detailed standards and regulations for a Type-C USB cable include:
+[start=1]
+. USB 3.1 specification: This specification defines the physical and electrical characteristics of the Type-C connector and cable. It covers the pin assignments, connector dimensions, and cable assembly requirements for the Type-C connector.
+. USB Type-C Cable and Connector Specification: This specification defines the requirements for Type-C cables, including the maximum cable length, voltage and current rating, and cable impedance. It also defines the requirements for the Type-C connector, including the connector dimensions, contact resistance, and insertion/retention force.
+. USB Power Delivery Specification: This specification defines the requirements for power delivery over a USB Type-C cable, including the maximum power level of 100W and the various power profiles that a cable should support.
+. USB-IF Compliance Testing Program: This program is run by the USB Implementers Forum (USB-IF) and includes a series of tests that a Type-C cable must pass in order to be compliant with the USB-IF standards.
+. Safety Standards: The cable must comply with safety standards such as UL, CE, FCC, and RoHS. These standards ensure that the cable is safe to use and does not pose any hazards to the user.
+. EMC Standards: The cable must comply with the Electromagnetic Compatibility (EMC) standards for cables, which ensure that the cable does not cause interference with other electronic devices.
+. Environmental Regulations: The cable must comply with environmental regulations such as REACH, WEEE, and RoHS. These regulations ensure that the cable is made of materials that are safe for the environment and that it can be recycled or disposed of safely.
+Country-specific regulations: Depending on the country where the cable is sold, it might be required to comply with additional regulations and standards.
+
+
+Materials Required
+^^^^^^^^^^^^^^^^^^
+
+The materials required in the manufacturing process of a USB Type-C cable include:
+
+. Copper wire: The cable core is made of copper wire, which is responsible for the electrical conductivity of the cable. The copper wire is typically stranded and coated with a layer of insulation to prevent short-circuiting.
+. Insulation materials: The insulation materials are used to coat the copper wire to prevent short-circuiting and to protect the wire from physical damage. The insulation materials can be made of PVC, TPE, rubber, or other materials.
+. Shielding materials: Shielding materials are used to protect the cable from electromagnetic interference (EMI) and radio frequency interference (RFI). The shielding materials can be made of aluminum foil, braided wire, or other materials.
+. Connectors: The connectors are the parts of the cable that connect to the devices. The connectors can be made of plastic or metal and typically have metal contacts for electrical connectivity.
+ Cable jacket: The cable jacket is the outer layer of the cable that protects the other components from physical damage. The cable jacket can be made of PVC, TPE, rubber, or other materials.
+. Adhesive materials: Adhesive materials are used to hold the various components of the cable together and to ensure that the cable is durable.
+. Labels, Markings and Packaging: The cable is often labeled with the manufacturer's information, certifications, and other information, and is packaged for distribution.
+
+Pricing
+^^^^^^^
+. Copper wire: The price of copper wire can range from $2 to $5 per pound.(360 - 900 Rs/kg). This will roughly cost us 10 -11 Rs. (considering 1m length wire and 4 copper wires with diameter 1mm)
+. Insulation materials and cable jackets: The price of insulation materials and cable jackets, such as PVC or TPE, can range from $0.5 to $1 per pound (90 - 180 Rs/kg).
+This will cost us roughly 5 - 6 Rs (considering 1m length and inner radius of 2.5 mm and thickness 1 mm )
+. Shielding materials: The price of shielding materials, such as aluminum foil or braided wire, can range from $1 to $2 per pound.(180 - 360 Rs/kg) This will cost us roughly 5 - 6 Rs.
+. Connectors: The price of connectors can range from $0.1 to $0.5 per piece, depending on the type and quality of the connector. (18 - 90 Rs/kg)
+. Adhesive materials: The price of adhesive materials can range from $0.05 to $0.1 per pound. (9 - 18 Rs/kg)
+. Labels, Markings, and Packaging: The cost of labels, markings, and packaging can vary widely depending on the materials and methods used.
+. Overall cost ~ around 25 - 30 Rs. (including additional costs of label, adhesive materials etc)
+
+//  (~180 Rs/kg == 1 dollar / pound)
+=== Charger Adapter
+Shape and Size
+^^^^^^^^^^^^^^
+
+. Rectangular body (Box shape) with rounded corners.
+. The body will have a length of 7.5 cm, a width of 4.5 cm, and a depth of 2cm.
+
+Materials
+^^^^^^^^
+The main body of a mobile phone charger is typically made of plastic or metal.
+
+Plastic is a popular choice because it is lightweight, inexpensive, and can be easily molded into various shapes and sizes. ABS (Acrylonitrile Butadiene Styrene) is a commonly used plastic material for the main body of a mobile phone charger, as it is durable and has good heat resistance. Hence, we will use ABS for making our chargers due to the above factors.
+
+Colour
+^^^^^^
+
+. Typically, we have chargers in black and white colors.
+. We can make chargers in different colors too, like red, yellow, etc.
+
+Standards
+^^^^^^^^^
+The battery charger should be designed according to IEEE-1547, SAE-J2894, and similar standards such that the amount of harmonic and dc current injected into the utility grid must be controlled within the preset limit.
+
+There are several standards that mobile phone chargers must adhere to in order to ensure safe and efficient charging of devices. Some of the most important standards include:
+[start=1]
+. USB Charging: The USB (Universal Serial Bus) standard is widely used for charging mobile phones and other devices. USB chargers typically provide 5V of power and can deliver up to 2.5 watts (500 mA) of current.
+. USB Power Delivery (USB-PD): USB-PD is a newer standard that allows for higher power charging up to 100 watts. This standard allows for faster charging and also supports charging of laptops and other devices.
+
+These are the most common standards in the market, but there are others such as the European Union's Energy-related Products (ErP) Directive, which limits the standby power consumption of devices, and the safety standards like UL, CE and FCC.
+
+Our charger body should be compatible with these standards and should be safe to use at these specifications.
+
+Prices
+^^^^^^
+The material we are using for charging is ABS (Acrylonitrile Butadiene Styrene), and the approximate weight of one charger body will be around 20-25 grams. As of Jan’22 - Dec’22 the price of ABS is around 95-125 Rupees per Kg. So, considering the mass production of the charger body we can assume that we can make 30-35 charger bodies per Kg of ABS material. Hence, it will cost around 4 Rupees per charger body.
+
+=== Electric Plug Pin
+
+Material Options
+^^^^^^^^^^^^^^^^
+
+. Copper
+. Aluminium
+
+Plating/Coating
+^^^^^^^^^^^^^^^
+Stainless Steel, and any finish as per customer requirements.
+
+Features
+^^^^^^^^
+. Provide Quick and Easy Installation
+. Provide Space Saving Connection and Installation
+. Corrosion and Rust Resistant
+. Provide High Electrical Conductivity
+. Available with Safety Standards and compliance
+. Custom Specific Range also available
+
+Type- C
+^^^^^^^^
+
+The Type C plug or Euro plug is ungrounded with two round pins that converge slightly towards their free ends.
+
+Other Specifications
+^^^^^^^^^^^^^^^^^^^^
+[cols=",",options="header"]
+|===
+
+|Index
+|Value
+
+|Socket standard
+|CEE 7/17
+
+|Power rating
+|16 A/250 V
+
+|Grounded
+|No
+
+|Polarized
+|No
+
+|Fused
+|No
+
+|Insulated pins
+|No
+
+|===
+
+== References
+[start=1]
+. Patel Mech. Available at: https://patelmech.com/products/electrical-parts/electrical-plug-pins/ (Accessed: January 31, 2023). 
+. Types, Uses, Features and Benefits. Industrial Quick Search. Available at: https://www.iqsdirectory.com/articles/power-cord/electrical-plugs.html#:~:text=The%20hot%20and%20neutral%20pins%20measure%201.5%20mm%20thick%2C%2015.9,of%2015A%20and%20125V%2C%20respectively. (Accessed: January 31, 2023). 
+. Power Plugs Selection Guide: Types, Features, Applications | Engineering360. Available at: https://www.globalspec.com/learnmore/electrical_electronic_components/connectors/power_plugs (Accessed: January 31, 2023). 
+. What materials are used to make any charger? Quora. Available at: https://www.quora.com/What-materials-are-used-to-make-any-charger (Accessed: January 31, 2023). 
+. ABS plastic granules - abs plastic raw material latest price, Manufacturers &amp; Suppliers IndiaMART. Available at: https://dir.indiamart.com/impcat/abs-plastic-granules.html (Accessed: January 31, 2023). 
+. P. et al. (2022) How to read Smartphone Charger Specifications, Inquisitive Universe. Available at: https://inquisitiveuniverse.com/2021/04/21/how-to-read-smartphone-charger-specifications/ (Accessed: January 31, 2023). 
+. USB Type-C® Cable and Connector Specification, USB-IF. https://www.usb.org/usb-type-cr-cable-and-connector-specification/ (Accessed: January 31, 2023). 
+. Brant, T. (2022, October 26). What Is USB-C? An Explainer. PCMAG. https://www.pcmag.com/how-to/what-is-usb-c-an-explainer/ (Accessed: January 31, 2023). 
+ 
+
+
+
+ 
+
+
+
+
+
+
